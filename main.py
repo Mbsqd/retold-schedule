@@ -35,6 +35,19 @@ async def cmd_next_week(message: types.Message):
     text = schedule_processor.generate_schedule_message_for_week(False)
     await message.answer(text)
 
+
+@dp.message(Command("current_lesson"))
+async def cmd_lesson(message: types.Message):
+    text = schedule_processor.generate_lesson_message(True)
+    await message.answer(text)
+
+
+@dp.message(Command("next_lesson"))
+async def cmd_next_lesson(message: types.Message):
+    text = schedule_processor.generate_lesson_message(False)
+    await message.answer(text)
+
+
 async def main():
     print()
     await dp.start_polling(bot)

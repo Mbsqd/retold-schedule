@@ -267,8 +267,8 @@
           "label": "Середа",
           "lessons": [
             {
-              "start_time": "08:00",
-              "end_time": "09:20",
+              "start_time": "16:20",
+              "end_time": "17:40",
               "subject": "Комп. дискретн. матем-ка",
               "type": "practice",
               "is_online": true,
@@ -277,12 +277,12 @@
               "zoom_2": ""
             },
             {
-              "start_time": "09:30",
-              "end_time": "10:50",
+              "start_time": "17:50",
+              "end_time": "18:10",
               "subject": "Комп. дискретн. матем-ка",
               "type": "lecture",
-              "is_online": true,
-              "auditory": "",
+              "is_online": false,
+              "auditory": "413",
               "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
               "zoom_2": ""
             }
