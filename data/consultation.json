@@ -1,0 +1,30 @@
+{
+  "consultations": [
+    {
+      "day": "monday",
+      "label": "Понеділок",
+      "items": [
+        {
+          "start_time": "15:00",
+          "end_time": "16:20",
+          "subject": "Комп'ютерна графіка",
+          "teacher": "Прізвище І. О.",
+          "zoom": "https://us04web.zoom.us/j/2630365337?pwd=..."
+        }
+      ]
+    },
+    {
+      "day": "thursday",
+      "label": "Четвер",
+      "items": [
+        {
+          "start_time": "14:30",
+          "end_time": "15:50",
+          "subject": "Комп'ютерна графіка",
+          "teacher": "Прізвище І. О.",
+          "zoom": "https://us04web.zoom.us/j/2630365337?pwd=..."
+        }
+      ]
+    }
+  ]
+}

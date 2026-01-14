@@ -1,3 +1,3 @@
-from src.model.schedule import ScheduleModel
+from src.model.schedule import ScheduleModel, WeekModel, DayModel, LessonModel, TypeLessonEnum, DayOfWeekEnum, TypeOfWeekEnum
 
-__all__ = ["ScheduleModel"]
+__all__ = ["ScheduleModel", "WeekModel", "DayModel", "LessonModel", "TypeLessonEnum", "DayOfWeekEnum", "TypeOfWeekEnum"]

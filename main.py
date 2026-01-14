@@ -9,6 +9,7 @@ from aiogram.types import LinkPreviewOptions
 
 from config import settings
 from src.utils.schedule_utils import ScheduleProcessor
+from src.utils.consultation_utils import ConsultationsProcessor
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=settings.bot_token,
@@ -16,6 +17,7 @@ bot = Bot(token=settings.bot_token,
 dp = Dispatcher()
 
 schedule_processor = ScheduleProcessor()
+consultation_processor = ConsultationsProcessor()
 
 
 @dp.message(Command("start"))
@@ -45,6 +47,12 @@ async def cmd_lesson(message: types.Message):
 @dp.message(Command("next_lesson"))
 async def cmd_next_lesson(message: types.Message):
     text = schedule_processor.generate_lesson_message(False)
+    await message.answer(text)
+
+
+@dp.message(Command("consultations"))
+async def cmd_consultations(message: types.Message):
+    text = consultation_processor.generate_consultations_message()
     await message.answer(text)
 
 

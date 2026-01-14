@@ -3,13 +3,14 @@ from zoneinfo import ZoneInfo
 
 from aiogram import html
 
-from src.model.schedule import ScheduleModel, TypeOfWeekEnum, WeekModel, DayOfWeekEnum, TypeLessonEnum, DayModel, \
-    LessonModel
+from config import settings
+from src.model.schedule import ScheduleModel, WeekModel, DayModel, LessonModel
+from src.model.enums import TypeOfWeekEnum, DayOfWeekEnum, TypeLessonEnum
 from src.utils import json_utils
 
 
-def processing_json() -> ScheduleModel:
-    raw_schedule = json_utils.open_json()
+def processing_schedule_json() -> ScheduleModel:
+    raw_schedule = json_utils.open_json(settings.path_to_schedule_file)
     schedule: ScheduleModel = json_utils.validate_schedule(raw_schedule)
     return schedule
 
@@ -62,13 +63,16 @@ def get_formatted_lesson_link(lesson: LessonModel) -> str:
 
     return text
 
+
 class ScheduleProcessor:
     def __init__(self):
-        self.schedule = processing_json()
+        self.schedule = processing_schedule_json()
 
     schedule: ScheduleModel
     typeCurrentWeek: TypeOfWeekEnum = TypeOfWeekEnum.numerator
 
+    # Если текущая неделя кратна трем, добавить в конце сообщения уведомлени об магической недели
+    # (На это недели занятия в субботу)
     def generate_schedule_message_for_week(self, is_current: bool) -> str:
         schedule = self.schedule
         weeks = schedule.weeks
@@ -120,13 +124,13 @@ class ScheduleProcessor:
             if is_current:
                 if lesson.start_time <= current_time <= lesson.end_time:
                     message_text = (f"{html.bold(lesson.subject)}\n"
-                                    f"{html.italic(lesson.start_time.strftime('%H:%M'))} - {html.italic(lesson.end_time.strftime('%H:%M'))}\n")
+                                    f"{html.italic(lesson.start_time.strftime('%H:%M'))} - ")
                     message_text += get_formatted_lesson_link(lesson)
                     break
             else:
                 if lesson.start_time > current_time:
                     message_text = (f"{html.bold(lesson.subject)}\n"
-                                    f"{html.italic(lesson.start_time.strftime('%H:%M'))} - {html.italic(lesson.end_time.strftime('%H:%M'))}\n")
+                                    f"{html.italic(lesson.start_time.strftime('%H:%M'))} - \n")
                     message_text += get_formatted_lesson_link(lesson)
                     break
 

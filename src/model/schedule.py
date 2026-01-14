@@ -1,28 +1,9 @@
 from datetime import time
-from enum import Enum
 from typing import Optional
 
 from pydantic import BaseModel, Field
 
-
-class TypeOfWeekEnum(str, Enum):
-    numerator = "numerator"
-    denominator = "denominator"
-
-
-class DayOfWeekEnum(str, Enum):
-    monday = "Понеділок"
-    tuesday = "Вівторок"
-    wednesday = "Середа"
-    thursday = "Четвер"
-    friday = "П'ятниця"
-    saturday = "Субота"
-    sunday = "Неділя"
-
-
-class TypeLessonEnum(str, Enum):
-    lecture = "lecture"
-    practice = "practice"
+from src.model.enums import TypeLessonEnum, DayOfWeekEnum, TypeOfWeekEnum
 
 
 class LessonModel(BaseModel):
