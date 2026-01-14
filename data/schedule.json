@@ -1,0 +1,366 @@
+{
+  "weeks": [
+    {
+      "type": "numerator",
+      "label": "Чисельник",
+      "days": [
+        {
+          "day": "monday",
+          "label": "Понеділок",
+          "lessons": [
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Теор.ймовірн.та матем.стат-ка",
+              "type": "lecture",
+              "is_online": false,
+              "auditory": "413",
+              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "11:00",
+              "end_time": "12:20",
+              "subject": "Інформаційні процеси на ЗТ",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/75838283457?pwd=UsJh0lbhgCU1xLCEROV7bAWdbW2at4.1",
+              "zoom_2": "https://us04web.zoom.us/"
+            },
+            {
+              "start_time": "13:00",
+              "end_time": "14:20",
+              "subject": "Інформаційні процеси на ЗТ",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/75838283457?pwd=UsJh0lbhgCU1xLCEROV7bAWdbW2at4.1",
+              "zoom_2": ""
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "label": "Вівторок",
+          "lessons": [
+            {
+              "start_time": "08:00",
+              "end_time": "09:20",
+              "subject": "Об'єктно-орієнтоване програмування",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us05web.zoom.us/j/84464678284?pwd=RCtBSCtISGdMY0ExUUd1SUZyNUQvZz09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Об'єктно-орієнтоване програмування",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/77025776932?pwd=9z0qQLYsEQ2DIVPvQJ4kbgNjC6GU27.1",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "11:00",
+              "end_time": "12:20",
+              "subject": "Комп'ютерна графіка",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom_2": ""
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "label": "Середа",
+          "lessons": [
+            {
+              "start_time": "08:00",
+              "end_time": "09:20",
+              "subject": "Комп. дискретн. матем-ка",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Комп. дискретн. матем-ка",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
+              "zoom_2": ""
+            }
+          ]
+        },
+        {
+          "day": "thursday",
+          "label": "Четвер",
+          "lessons": [
+            {
+              "start_time": "08:00",
+              "end_time": "09:20",
+              "subject": "Програмування Інтернет-речей",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/73977935408?pwd=ZzNraDRaUkZpSEZ3T1h5ZWh2YnB6QT09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Програмування Інтернет-речей",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/73977935408?pwd=ZzNraDRaUkZpSEZ3T1h5ZWh2YnB6QT09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "11:00",
+              "end_time": "12:20",
+              "subject": "Менеджмент проєктів ПЗ",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/78505504245?pwd=V3VnK3ptUHp5WFBKTHN0YlV6V2k1Zz09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "13:00",
+              "end_time": "14:20",
+              "subject": "Менеджмент проєктів ПЗ",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/78505504245?pwd=V3VnK3ptUHp5WFBKTHN0YlV6V2k1Zz09",
+              "zoom_2": ""
+            }
+          ]
+        },
+        {
+          "day": "saturday",
+          "label": "Субота",
+          "lessons": [
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Теор.ймовірн.та матем.стат-ка",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "11:00",
+              "end_time": "12:20",
+              "subject": "Теор.ймовірн.та матем.стат-ка",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "13:00",
+              "end_time": "14:20",
+              "subject": "Інформаційні процеси на ЗТ",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/75838283457?pwd=UsJh0lbhgCU1xLCEROV7bAWdbW2at4.1",
+              "zoom_2": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "denominator",
+      "label": "Знаменник",
+      "days": [
+        {
+          "day": "monday",
+          "label": "Понеділок",
+          "lessons": [
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Теор.ймовірн.та матем.стат-ка",
+              "type": "lecture",
+              "is_online": false,
+              "auditory": "413",
+              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "11:00",
+              "end_time": "12:20",
+              "subject": "Теор.ймовірн.та матем.стат-ка",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom_2": "https://ust-edu-ua.zoom.us/"
+            },
+            {
+              "start_time": "13:00",
+              "end_time": "14:20",
+              "subject": "Інформаційні процеси на ЗТ",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/75838283457?pwd=UsJh0lbhgCU1xLCEROV7bAWdbW2at4.1",
+              "zoom_2": ""
+            }
+          ]
+        },
+        {
+          "day": "tuesday",
+          "label": "Вівторок",
+          "lessons": [
+            {
+              "start_time": "08:00",
+              "end_time": "09:20",
+              "subject": "Об'єктно-орієнтоване програмування",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us05web.zoom.us/j/84464678284?pwd=RCtBSCtISGdMY0ExUUd1SUZyNUQvZz09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Комп'ютерна графіка",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "11:00",
+              "end_time": "12:20",
+              "subject": "Комп'ютерна графіка",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom_2": ""
+            }
+          ]
+        },
+        {
+          "day": "wednesday",
+          "label": "Середа",
+          "lessons": [
+            {
+              "start_time": "08:00",
+              "end_time": "09:20",
+              "subject": "Комп. дискретн. матем-ка",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Комп. дискретн. матем-ка",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
+              "zoom_2": ""
+            }
+          ]
+        },
+        {
+          "day": "thursday",
+          "label": "Четвер",
+          "lessons": [
+            {
+              "start_time": "08:00",
+              "end_time": "09:20",
+              "subject": "Програмування Інтернет-речей",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/73977935408?pwd=ZzNraDRaUkZpSEZ3T1h5ZWh2YnB6QT09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Програмування Інтернет-речей",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/73977935408?pwd=ZzNraDRaUkZpSEZ3T1h5ZWh2YnB6QT09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "11:00",
+              "end_time": "12:20",
+              "subject": "Менеджмент проєктів ПЗ",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/78505504245?pwd=V3VnK3ptUHp5WFBKTHN0YlV6V2k1Zz09",
+              "zoom_2": ""
+            }
+          ]
+        },
+        {
+          "day": "saturday",
+          "label": "Субота",
+          "lessons": [
+            {
+              "start_time": "08:00",
+              "end_time": "09:20",
+              "subject": "Об'єктно-орієнтоване програмування",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us05web.zoom.us/j/84464678284?pwd=RCtBSCtISGdMY0ExUUd1SUZyNUQvZz09",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "09:30",
+              "end_time": "10:50",
+              "subject": "Комп'ютерна графіка",
+              "type": "lecture",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom_2": ""
+            },
+            {
+              "start_time": "11:00",
+              "end_time": "12:20",
+              "subject": "Комп'ютерна графіка",
+              "type": "practice",
+              "is_online": true,
+              "auditory": "",
+              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom_2": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
