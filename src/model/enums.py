@@ -7,13 +7,13 @@ class TypeOfWeekEnum(str, Enum):
 
 
 class DayOfWeekEnum(str, Enum):
-    monday = "Понеділок"
-    tuesday = "Вівторок"
-    wednesday = "Середа"
-    thursday = "Четвер"
-    friday = "П'ятниця"
-    saturday = "Субота"
-    sunday = "Неділя"
+    monday = "monday"
+    tuesday = "tuesday"
+    wednesday = "wednesday"
+    thursday = "thursday"
+    friday = "friday"
+    saturday = "saturday"
+    sunday = "sunday"
 
 
 class TypeLessonEnum(str, Enum):

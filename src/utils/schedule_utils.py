@@ -3,7 +3,7 @@ from zoneinfo import ZoneInfo
 
 from aiogram import html
 
-from config import settings
+from src.config import settings
 from src.model.schedule import ScheduleModel, WeekModel, DayModel, LessonModel
 from src.model.enums import TypeOfWeekEnum, DayOfWeekEnum, TypeLessonEnum
 from src.utils import json_utils
@@ -91,7 +91,7 @@ class ScheduleProcessor:
         message_text = f"Тиждень: {html.bold(current_week.label)}\n\n"
 
         for day in current_week.days:
-            current_day = day.label.value
+            current_day = day.day.value
             message_text += f"{html.bold(current_day)}\n"
             for lesson in day.lessons:
                 message_text += f"{html.italic(lesson.start_time.strftime('%H:%M'))} - {lesson.subject} "
@@ -114,7 +114,7 @@ class ScheduleProcessor:
         current_week: WeekModel = weeks_by_type.get(current_week_type)
 
         current_week_day_enum = get_current_week_day()
-        current_day: DayModel = next(day for day in current_week.days if day.label == current_week_day_enum)
+        current_day: DayModel = next(day for day in current_week.days if day.day == current_week_day_enum)
 
         current_time = get_current_time()
 
@@ -123,14 +123,16 @@ class ScheduleProcessor:
         for lesson in current_day.lessons:
             if is_current:
                 if lesson.start_time <= current_time <= lesson.end_time:
-                    message_text = (f"{html.bold(lesson.subject)}\n"
-                                    f"{html.italic(lesson.start_time.strftime('%H:%M'))} - ")
+                    message_text = f"{html.bold("Поточне заняття: \n\n")}"
+                    message_text += (f"{html.bold(lesson.subject)}\n"
+                                    f"{html.italic(lesson.start_time.strftime('%H:%M'))} - {html.italic(lesson.end_time.strftime('%H:%M'))} ")
                     message_text += get_formatted_lesson_link(lesson)
                     break
             else:
                 if lesson.start_time > current_time:
-                    message_text = (f"{html.bold(lesson.subject)}\n"
-                                    f"{html.italic(lesson.start_time.strftime('%H:%M'))} - \n")
+                    message_text = f"{html.bold("Наступне заняття: \n\n")}"
+                    message_text += (f"{html.bold(lesson.subject)}\n"
+                                    f"{html.italic(lesson.start_time.strftime('%H:%M'))} - {html.italic(lesson.end_time.strftime('%H:%M'))} ")
                     message_text += get_formatted_lesson_link(lesson)
                     break
 

@@ -1,7 +1,6 @@
 import json
 from pathlib import Path
 
-from config import settings
 from src.model.consultations import ConsultationsModel
 from src.model.schedule import ScheduleModel
 

@@ -15,8 +15,8 @@ class ItemModel(BaseModel):
 
 
 class ConsultationModel(BaseModel):
-    day: str
-    label: DayOfWeekEnum
+    day: DayOfWeekEnum
+    label: str
     items: List[ItemModel]
 
 

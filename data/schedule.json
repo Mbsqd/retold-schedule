@@ -293,7 +293,7 @@
           "label": "Четвер",
           "lessons": [
             {
-              "start_time": "08:00",
+              "start_time": "18:56",
               "end_time": "09:20",
               "subject": "Програмування Інтернет-речей",
               "type": "lecture",
@@ -303,7 +303,7 @@
               "zoom_2": ""
             },
             {
-              "start_time": "09:30",
+              "start_time": "18:57",
               "end_time": "10:50",
               "subject": "Програмування Інтернет-речей",
               "type": "practice",
@@ -313,7 +313,7 @@
               "zoom_2": ""
             },
             {
-              "start_time": "11:00",
+              "start_time": "18:59",
               "end_time": "12:20",
               "subject": "Менеджмент проєктів ПЗ",
               "type": "lecture",
@@ -325,11 +325,11 @@
           ]
         },
         {
-          "day": "saturday",
+          "day": "thursday",
           "label": "Субота",
           "lessons": [
             {
-              "start_time": "08:00",
+              "start_time": "16:54",
               "end_time": "09:20",
               "subject": "Об'єктно-орієнтоване програмування",
               "type": "practice",
@@ -339,7 +339,7 @@
               "zoom_2": ""
             },
             {
-              "start_time": "09:30",
+              "start_time": "16:55",
               "end_time": "10:50",
               "subject": "Комп'ютерна графіка",
               "type": "lecture",
@@ -349,7 +349,7 @@
               "zoom_2": ""
             },
             {
-              "start_time": "11:00",
+              "start_time": "16:58",
               "end_time": "12:20",
               "subject": "Комп'ютерна графіка",
               "type": "practice",

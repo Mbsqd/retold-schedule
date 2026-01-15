@@ -6,6 +6,8 @@ from pydantic import BaseModel, Field
 from src.model.enums import TypeLessonEnum, DayOfWeekEnum, TypeOfWeekEnum
 
 
+
+
 class LessonModel(BaseModel):
     start_time: time
     end_time: time
@@ -19,8 +21,8 @@ class LessonModel(BaseModel):
 
 
 class DayModel(BaseModel):
-    day: str
-    label: DayOfWeekEnum
+    day: DayOfWeekEnum
+    label: str
     lessons: list[LessonModel]
 
 

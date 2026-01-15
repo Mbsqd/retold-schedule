@@ -1,4 +1,4 @@
-from config import settings
+from src.config import settings
 from src.model.consultations import ConsultationsModel, ConsultationModel
 from src.utils import json_utils
 
@@ -20,7 +20,7 @@ class ConsultationsProcessor:
 
         consultations: list[ConsultationModel] = self.consultations.consultations
         for consultation in consultations:
-            message_text += f"{html.bold(consultation.label.value)}\n"
+            message_text += f"{html.bold(consultation.day.value)}\n"
             for item in consultation.items:
                 message_text += (f"{html.italic(item.start_time.strftime('%H:%M'))} - "
                                  f"{html.link(item.subject, item.zoom)}, "
