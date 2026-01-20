@@ -11,6 +11,8 @@ class Settings(BaseSettings):
     path_to_schedule_file: Path = PATH_TO_SCHEDULE_FILE
     path_to_consultations_file: Path = PATH_TO_CONSULTATIONS_FILE
     bot_token: str
+    telegram_admin_id: int
+    timezone: str = "Europe/Kyiv"
 
     model_config = SettingsConfigDict(env_file=BASE_DIR / ".." / ".env", env_file_encoding="utf-8")
 

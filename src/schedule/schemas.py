@@ -1,14 +1,12 @@
 from datetime import time
-from typing import Optional
+from typing import Optional, List
 
 from pydantic import BaseModel, Field
 
-from src.model.enums import TypeLessonEnum, DayOfWeekEnum, TypeOfWeekEnum
+from src.schedule.enums import TypeLessonEnum, DayOfWeekEnum, TypeOfWeekEnum
 
 
-
-
-class LessonModel(BaseModel):
+class LessonSchema(BaseModel):
     start_time: time
     end_time: time
     subject: str
@@ -20,17 +18,17 @@ class LessonModel(BaseModel):
     model_config = {"extra": "forbid"}
 
 
-class DayModel(BaseModel):
+class DaySchema(BaseModel):
     day: DayOfWeekEnum
     label: str
-    lessons: list[LessonModel]
+    lessons: List[LessonSchema]
 
 
-class WeekModel(BaseModel):
-    typeOfWeek: TypeOfWeekEnum = Field(alias="type")
+class WeekSchema(BaseModel):
+    type_of_week: TypeOfWeekEnum = Field(alias="type")
     label: str
-    days: list[DayModel]
+    days: List[DaySchema]
 
 
-class ScheduleModel(BaseModel):
-    weeks: list[WeekModel]
+class ScheduleSchema(BaseModel):
+    weeks: List[WeekSchema]

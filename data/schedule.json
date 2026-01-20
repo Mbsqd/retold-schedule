@@ -15,7 +15,7 @@
               "type": "lecture",
               "is_online": false,
               "auditory": "413",
-              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -25,8 +25,8 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/75838283457?pwd=UsJh0lbhgCU1xLCEROV7bAWdbW2at4.1",
-              "zoom_2": "https://us04web.zoom.us/"
+              "zoom": "https://zoom.us/",
+              "zoom_2": "https://zoom.us/"
             },
             {
               "start_time": "13:00",
@@ -35,7 +35,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/75838283457?pwd=UsJh0lbhgCU1xLCEROV7bAWdbW2at4.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -45,33 +45,33 @@
           "label": "Вівторок",
           "lessons": [
             {
-              "start_time": "08:00",
+              "start_time": "12:37",
               "end_time": "09:20",
               "subject": "Об'єктно-орієнтоване програмування",
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us05web.zoom.us/j/84464678284?pwd=RCtBSCtISGdMY0ExUUd1SUZyNUQvZz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
-              "start_time": "09:30",
+              "start_time": "12:08",
               "end_time": "10:50",
               "subject": "Об'єктно-орієнтоване програмування",
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/77025776932?pwd=9z0qQLYsEQ2DIVPvQJ4kbgNjC6GU27.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
-              "start_time": "11:00",
+              "start_time": "12:10",
               "end_time": "12:20",
               "subject": "Комп'ютерна графіка",
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -87,7 +87,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -97,7 +97,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -113,7 +113,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/73977935408?pwd=ZzNraDRaUkZpSEZ3T1h5ZWh2YnB6QT09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -123,7 +123,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/73977935408?pwd=ZzNraDRaUkZpSEZ3T1h5ZWh2YnB6QT09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -133,7 +133,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/78505504245?pwd=V3VnK3ptUHp5WFBKTHN0YlV6V2k1Zz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -143,7 +143,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/78505504245?pwd=V3VnK3ptUHp5WFBKTHN0YlV6V2k1Zz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -159,7 +159,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -169,7 +169,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -179,7 +179,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/75838283457?pwd=UsJh0lbhgCU1xLCEROV7bAWdbW2at4.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -201,7 +201,7 @@
               "type": "lecture",
               "is_online": false,
               "auditory": "413",
-              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -211,8 +211,8 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://ust-edu-ua.zoom.us/j/86039610920?pwd=VhUUvoEImzMMJrIb3UTXk8Qcx40RvS.1",
-              "zoom_2": "https://ust-edu-ua.zoom.us/"
+              "zoom": "https://zoom.us/",
+              "zoom_2": "https://zoom.us/"
             },
             {
               "start_time": "13:00",
@@ -221,7 +221,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/75838283457?pwd=UsJh0lbhgCU1xLCEROV7bAWdbW2at4.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -237,7 +237,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us05web.zoom.us/j/84464678284?pwd=RCtBSCtISGdMY0ExUUd1SUZyNUQvZz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -247,7 +247,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -257,7 +257,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -273,7 +273,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -283,7 +283,7 @@
               "type": "lecture",
               "is_online": false,
               "auditory": "413",
-              "zoom": "https://us04web.zoom.us/j/5950587213?pwd=eU1Sbm5BcmVzYnJzRXRKVUpRQUlGdz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -299,7 +299,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/73977935408?pwd=ZzNraDRaUkZpSEZ3T1h5ZWh2YnB6QT09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -309,7 +309,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/73977935408?pwd=ZzNraDRaUkZpSEZ3T1h5ZWh2YnB6QT09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -319,7 +319,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/78505504245?pwd=V3VnK3ptUHp5WFBKTHN0YlV6V2k1Zz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
@@ -335,7 +335,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us05web.zoom.us/j/84464678284?pwd=RCtBSCtISGdMY0ExUUd1SUZyNUQvZz09",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -345,7 +345,7 @@
               "type": "lecture",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             },
             {
@@ -355,7 +355,7 @@
               "type": "practice",
               "is_online": true,
               "auditory": "",
-              "zoom": "https://us04web.zoom.us/j/2630365337?pwd=lJEXacYQra10eWAFUCQBwCqNR0vJlV.1",
+              "zoom": "https://zoom.us/",
               "zoom_2": ""
             }
           ]
