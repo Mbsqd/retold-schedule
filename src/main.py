@@ -11,6 +11,7 @@ from aiogram.types import LinkPreviewOptions
 from config import settings
 from src.bot.routers import setup_routers
 from src.consultations.dependencies import get_consultations_service
+from src.notification.notification_manager import NotificationManager
 from src.notification.scheduler import NotificationScheduler
 from src.notification.sender import TelegramNotificationSender
 from src.notification.service import NotificationService
@@ -26,31 +27,32 @@ def create_notification_service(bot: Bot) -> NotificationService:
 
 async def main():
     logging.basicConfig(level=logging.INFO)
-
     bot = Bot(token=settings.bot_token,
               default=DefaultBotProperties(
                   parse_mode=ParseMode.HTML,
                   link_preview=LinkPreviewOptions(is_disabled=True)))
 
+    dp = Dispatcher()
+
     schedule_service = get_schedule_service()
     consultations_service = get_consultations_service()
 
     notification_service = create_notification_service(bot)
-
     events = schedule_service.build_week_events(today=date.today())
-    notifications = notification_service.build_notifications(events=events)
 
-    asyncio.create_task(
-        notification_service.schedule_all(
-            notifications=notifications)
+    manager = NotificationManager(
+        schedule_service=schedule_service,
+        notification_service=notification_service,
+        tz=ZoneInfo(settings.timezone)
     )
-
-    dp = Dispatcher()
+    asyncio.create_task(manager.run())
 
     setup_routers(dp, schedule_service, consultations_service)
-
     await dp.start_polling(bot)
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        logging.info("Shutting down...")
