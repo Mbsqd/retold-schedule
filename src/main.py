@@ -1,6 +1,5 @@
 import asyncio
 import logging
-from datetime import date
 from zoneinfo import ZoneInfo
 
 from aiogram import Bot, Dispatcher
@@ -9,6 +8,7 @@ from aiogram.enums import ParseMode
 from aiogram.types import LinkPreviewOptions
 
 from config import settings
+from src.alert.dependencies import get_alert_service
 from src.bot.routers import setup_routers
 from src.consultations.dependencies import get_consultations_service
 from src.notification.notification_manager import NotificationManager
@@ -34,12 +34,12 @@ async def main():
 
     dp = Dispatcher()
 
-    schedule_service = get_schedule_service()
+    alert_service = get_alert_service()
+
+    schedule_service = get_schedule_service(alert_service)
     consultations_service = get_consultations_service()
 
     notification_service = create_notification_service(bot)
-    events = schedule_service.build_week_events(today=date.today())
-
     manager = NotificationManager(
         schedule_service=schedule_service,
         notification_service=notification_service,

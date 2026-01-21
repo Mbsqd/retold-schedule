@@ -10,8 +10,14 @@ PATH_TO_CONSULTATIONS_FILE = BASE_DIR / ".." / "data" / "consultation.json"
 class Settings(BaseSettings):
     path_to_schedule_file: Path = PATH_TO_SCHEDULE_FILE
     path_to_consultations_file: Path = PATH_TO_CONSULTATIONS_FILE
+
     bot_token: str
     telegram_admin_id: int
+
+    alert_api_token: str
+    alert_api_base_url: str
+    alert_api_region_uid: int
+
     timezone: str = "Europe/Kyiv"
 
     model_config = SettingsConfigDict(env_file=BASE_DIR / ".." / ".env", env_file_encoding="utf-8")

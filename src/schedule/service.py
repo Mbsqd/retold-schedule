@@ -4,6 +4,7 @@ from zoneinfo import ZoneInfo
 
 from aiogram import html
 
+from src.alert.service import AlertService
 from src.config import settings
 from src.schedule.enums import DayOfWeekEnum, DAY_OFFSET
 from src.schedule.lesson_event import LessonEvent
@@ -13,8 +14,9 @@ from src.week_context.models import WeekContext
 
 
 class ScheduleService:
-    def __init__(self, schedule: ScheduleModel):
+    def __init__(self, schedule: ScheduleModel, alert_service: AlertService):
         self.schedule = schedule
+        self.alert_service = alert_service
 
     def get_week_by_date(self, target_date: date) -> WeekModel:
         context = WeekContext.from_date(target_date)
@@ -73,9 +75,17 @@ class ScheduleService:
 
         return events
 
-    def get_format_lesson(self, target_date: date, is_current: bool) -> str:
+    async def get_format_lesson(self, target_date: date, is_current: bool) -> str:
         lessons: list[LessonModel] = self.get_lessons_for_day(target_date)
         now: time = datetime.now(ZoneInfo(settings.timezone)).time()
+
+        alert_status = await self.alert_service.is_air_raid_active(settings.alert_api_region_uid)
+        alert_message = (f"\n\nТривога!"
+                         if alert_status
+                         else "\n\nТривоги немає")
+
+        response_text = "На поточний момент занять немає"
+        response_text += alert_message
 
         for lesson in lessons:
             if is_current:
@@ -87,6 +97,8 @@ class ScheduleService:
                         f" - {html.italic(lesson.end_time.strftime('%H:%M'))} "
                     )
                     text += get_formatted_lesson_links(lesson)
+                    text += "\n\n"
+                    text += alert_message
                     return text
             else:
                 if lesson.start_time > now:
@@ -97,6 +109,8 @@ class ScheduleService:
                         f" - {html.italic(lesson.end_time.strftime('%H:%M'))} "
                     )
                     text += get_formatted_lesson_links(lesson)
+                    text += "\n\n"
+                    text += alert_message
                     return text
 
-        return "На поточний момент занять немає"
+        return response_text

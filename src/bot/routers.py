@@ -1,5 +1,6 @@
 from aiogram import Bot, Dispatcher
 
+from src.alert.service import AlertService
 from src.bot.handlers import start
 from src.bot.handlers.consultations import build_consultation_router
 from src.bot.handlers.on_shutdown import on_shutdown

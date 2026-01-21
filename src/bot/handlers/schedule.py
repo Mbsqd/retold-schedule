@@ -26,13 +26,13 @@ def build_schedule_router(schedule_service: ScheduleService) -> Router:
     @router.message(Command("current_lesson"))
     async def current_lesson(message: Message):
         today = datetime.today()
-        text = schedule_service.get_format_lesson(today, True)
+        text = await schedule_service.get_format_lesson(today, True)
         await message.answer(text)
 
     @router.message(Command("next_lesson"))
     async def current_lesson(message: Message):
         today = datetime.today()
-        text = schedule_service.get_format_lesson(today, False)
+        text = await schedule_service.get_format_lesson(today, False)
         await message.answer(text)
 
     return router
