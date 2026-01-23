@@ -1,7 +1,7 @@
 [project]
 name = "retold-schedule"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.0.0"
+description = "Async Telegram bot for schedule management and air raid alerts."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
