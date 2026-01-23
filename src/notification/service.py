@@ -1,4 +1,5 @@
 import asyncio
+import logging
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -30,7 +31,7 @@ class NotificationService:
                 text=f"{html.bold("Заняття через 5хв")} - {html.italic(event.start_at.strftime('%H:%M'))}\n\n"
                      f"{event.title} - {get_formatted_lesson_links(event)}"
             ))
-            print(f"Created notifications: {notify_at} - {event.title}")
+            logging.info(f"Created notifications: {notify_at} - {event.title}")
 
         return notifications
 

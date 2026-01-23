@@ -7,7 +7,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.types import LinkPreviewOptions
 
-from config import settings
+from src.config import settings
 from src.alert.dependencies import get_alert_service
 from src.bot.routers import setup_routers
 from src.consultations.dependencies import get_consultations_service
@@ -34,7 +34,8 @@ async def main():
 
     dp = Dispatcher()
 
-    alert_service = get_alert_service()
+    alert_service = await get_alert_service()
+    dp["alert_service"] = alert_service
 
     schedule_service = get_schedule_service(alert_service)
     consultations_service = get_consultations_service()

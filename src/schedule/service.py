@@ -30,14 +30,20 @@ class ScheduleService:
         day_index = today.weekday()
         day_enum = list(DayOfWeekEnum)[day_index]
 
-        day_model: DayModel = next(d for d in week.days if d.day == day_enum)
+        day_model: DayModel = next(
+            (d for d in week.days if d.day == day_enum), None
+        )
+
+        if not day_model:
+            return []
+
         return day_model.lessons
 
     def get_format_schedule_by_week(self, target_date: date) -> str:
         context = WeekContext.from_date(target_date)
         week = self.schedule.get_week(context.type_of_week)
 
-        text = f"Тиждень: {html.bold(week.label)}\n\n"
+        text = f"📆 Тиждень: {html.bold(week.label)}\n\n"
         for day in week.days:
             text += f"{html.bold(day.label)}\n"
             for lesson in day.lessons:
@@ -60,7 +66,7 @@ class ScheduleService:
                 start_at = datetime.combine(
                     lesson_date,
                     lesson.start_time,
-                    tzinfo=ZoneInfo("Europe/Kyiv")
+                    tzinfo=ZoneInfo(settings.timezone)
                 )
 
                 events.append(LessonEvent(
@@ -80,17 +86,17 @@ class ScheduleService:
         now: time = datetime.now(ZoneInfo(settings.timezone)).time()
 
         alert_status = await self.alert_service.is_air_raid_active(settings.alert_api_region_uid)
-        alert_message = (f"\n\nТривога!"
+        alert_message = (f"\n\n🔴 У регіоні оголошено тривогу!"
                          if alert_status
-                         else "\n\nТривоги немає")
+                         else "\n\n🟢 Все спокійно")
 
-        response_text = "На поточний момент занять немає"
+        response_text = "Занять не знайдено 🎉"
         response_text += alert_message
 
         for lesson in lessons:
             if is_current:
                 if lesson.start_time <= now <= lesson.end_time:
-                    text = html.bold("Поточне заняття:\n\n")
+                    text = html.bold("📍 Поточне заняття:\n\n")
                     text += (
                         f"{html.bold(lesson.subject)}\n"
                         f"{html.italic(lesson.start_time.strftime('%H:%M'))}"
@@ -102,7 +108,7 @@ class ScheduleService:
                     return text
             else:
                 if lesson.start_time > now:
-                    text = html.bold("Наступне заняття:\n\n")
+                    text = html.bold("⏳ Наступне заняття:\n\n")
                     text += (
                         f"{html.bold(lesson.subject)}\n"
                         f"{html.italic(lesson.start_time.strftime('%H:%M'))}"
